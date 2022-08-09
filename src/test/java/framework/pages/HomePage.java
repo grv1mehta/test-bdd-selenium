@@ -68,21 +68,20 @@ public class HomePage {
 
     public void clickViewCartBtn(String index) {
         try {
-            int newindex = Integer.parseInt(index);
+            int newIndex = Integer.parseInt(index);
             try {
-                genericLibrary.highLightElement(DriverFactory.getDriver(), ViewCartBtn.get(newindex - 1));
-                ViewCartBtn.get(newindex - 1).click();
-                long startTime = System.currentTimeMillis();
+                genericLibrary.highLightElement(DriverFactory.getDriver(), ViewCartBtn.get(newIndex - 1));
+                ViewCartBtn.get(newIndex - 1).click();
+//                long startTime = System.currentTimeMillis();
                 genericLibrary.explicitWaitforanElement(DriverFactory.getDriver(), ViewCartHeader);
                 genericLibrary.highLightElement(DriverFactory.getDriver(), ViewCartHeader);
-                long endTime = System.currentTimeMillis();
-                System.out.println("total Time::"+(endTime-startTime));
+//                long endTime = System.currentTimeMillis();
+//                System.out.println("total Time::"+(endTime-startTime));
 
 
             } catch (NoSuchElementException e) {
                 Assert.assertFalse(false);
             }
-
 
         } catch (IndexOutOfBoundsException e) {
             Assert.assertFalse(false);

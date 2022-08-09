@@ -79,6 +79,7 @@ public class CartPage {
             }
 
             Collections.sort(arrayList);
+            System.out.println(arrayList);
 
         } catch (ArrayIndexOutOfBoundsException e) {
             Assert.assertFalse(false);
