@@ -111,7 +111,7 @@
 
                 <configuration>
                     <includes>
-                        <include>**/BaseRunner.java</include>
+                        <include>**/TestRunner.java</include>
                     </includes>
                     <parallel>methods</parallel>
                     <useUnlimitedThreads>true</useUnlimitedThreads>

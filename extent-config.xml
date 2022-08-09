@@ -10,10 +10,10 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>TestFramework</documentTitle>
+        <documentTitle>Test_Report</documentTitle>
 
         <!-- report name - displayed at top-nav -->
-        <reportName>TestFramework_Report</reportName>
+        <reportName>Report</reportName>
 
         <!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
         <dateFormat>yyyy-MM-dd</dateFormat>
