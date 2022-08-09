@@ -1,10 +1,6 @@
     # Cucumber-BDD-Automation-Framework
-Behavior Driven Development Cucumber - Selenium based automation framework including extent reports
-This framework contains sample code containing:
-1 feature (feature file)
-1 Scenario
-Simple scenario adding products to carts
-Advance scenario where parameterization has been used (Scenario Outline examples) to search different types of products and listing out them
+
+This is normal behaviour driven framework built using cucumber,selenium,webdriver manager and other required libraries.
 
 Directory structure:
 
@@ -12,9 +8,9 @@ Directory structure:
 
 
 Steps to run at your system:
-Clone the repository using "git clone"
+Clone the repository using `git clone https://github.com/grv1mehta/test-bdd-selenium.git`
 
-Run "mvn clean test"
+Run `mvn clean test`
 
 Cucumber Reports:
 
