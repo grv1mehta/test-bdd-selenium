@@ -13,14 +13,12 @@ public class Hooks {
     private GenericLibrary genericLibrary = new GenericLibrary();
 
 
-
     @Before
     public void launchBrowser()
     {
         String browserName = genericLibrary.readDataFromPropertyFile("browser");
         driver = driverFactory.init_Driver(browserName);
     }
-
 
     @After(order=0)
     public void quitBrowser()

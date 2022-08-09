@@ -34,10 +34,9 @@ public class HomePage {
     private WebElement ViewCartHeader;
 
 
-    public void addItemsToCart(String ItemstoAdd) {
+    public void addItemsToCart(String itemsToAdd) {
         try {
-            int numOfItems = Integer.parseInt(ItemstoAdd);
-
+            int numOfItems = Integer.parseInt(itemsToAdd);
 
             for (int i = 0; i < numOfItems; i++) {
                 try {
@@ -48,9 +47,8 @@ public class HomePage {
                 } catch (NoSuchElementException e) {
                     Assert.assertFalse(false);
                 }
-
             }
-            Assert.assertTrue(true, "Added" + ItemstoAdd + "Items to the Cart...");
+            Assert.assertTrue(true, "Added" + itemsToAdd + "Items to the Cart...");
 
 
         } catch (ArrayIndexOutOfBoundsException e) {
@@ -68,18 +66,17 @@ public class HomePage {
 
     }
 
-
     public void clickViewCartBtn(String index) {
         try {
             int newindex = Integer.parseInt(index);
             try {
                 genericLibrary.highLightElement(DriverFactory.getDriver(), ViewCartBtn.get(newindex - 1));
                 ViewCartBtn.get(newindex - 1).click();
-                long starttime = System.currentTimeMillis();
+                long startTime = System.currentTimeMillis();
                 genericLibrary.explicitWaitforanElement(DriverFactory.getDriver(), ViewCartHeader);
                 genericLibrary.highLightElement(DriverFactory.getDriver(), ViewCartHeader);
-                long endtime = System.currentTimeMillis();
-                System.out.println("total Time::"+(endtime-starttime));
+                long endTime = System.currentTimeMillis();
+                System.out.println("total Time::"+(endTime-startTime));
 
 
             } catch (NoSuchElementException e) {

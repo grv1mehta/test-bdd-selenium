@@ -1,6 +1,6 @@
     # Cucumber-BDD-Automation-Framework
 
-This is normal behaviour driven framework built using cucumber,selenium,webdriver manager and other required libraries.
+This is normal behaviour driven framework built using cucumber,selenium,webdriver manager, extent reports and other required libraries.
 
 Directory structure:
 
@@ -10,11 +10,10 @@ Directory structure:
 Steps to run at your system:
 Clone the repository using `git clone https://github.com/grv1mehta/test-bdd-selenium.git`
 
-Run `mvn clean test`
+Run `mvn clean install` and make sure all dependencies are downloaded.
+Then run `mvn test` 
 Or
 Run the TestRunner under base/framework
-Or 
-Run the feature file/scenario directly
 
 Cucumber Reports:
 

@@ -9,16 +9,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-
         <cucumber-jvm.version>6.10.4</cucumber-jvm.version>
         <extentreports.version>2.10.0</extentreports.version>
         <testng.version>7.3.0</testng.version>
         <selenium.version>4.3.0</selenium.version>
         <webdrivermanager.version>5.2.1</webdrivermanager.version>
-
-
-
-
     </properties>
 
 
@@ -29,11 +24,6 @@
             <artifactId>cucumber-java</artifactId>
             <version>${cucumber-jvm.version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>io.cucumber</groupId>-->
-<!--            <artifactId>cucumber-java8</artifactId>-->
-<!--            <version>${cucumber-jvm.version}</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-core</artifactId>
@@ -44,27 +34,16 @@
             <artifactId>cucumber-picocontainer</artifactId>
             <version>${cucumber-jvm.version}</version>
         </dependency>
-
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
             <version>${cucumber-jvm.version}</version>
         </dependency>
-
-
         <dependency>
             <groupId>tech.grasshopper</groupId>
             <artifactId>extentreports-cucumber6-adapter</artifactId>
             <version>${extentreports.version}</version>
         </dependency>
-
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
@@ -75,17 +54,17 @@
             <artifactId>selenium-api</artifactId>
             <version>${selenium.version}</version>
         </dependency>
-
-
-
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
-
-
 
     </dependencies>
 

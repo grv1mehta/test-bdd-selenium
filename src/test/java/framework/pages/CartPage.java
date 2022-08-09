@@ -34,35 +34,28 @@ public class CartPage {
     @FindBy(how = How.XPATH, using = "//tbody/tr/td[@class='product-remove']/a")
     private List<WebElement> productRemove;
 
-    @FindBy(how = How.XPATH, using = "//tr/th[@class='product-name']")
-    private WebElement productName;
 
-
-    public void verifyTotalCartItems(String ItemstoAdd) {
+    public void verifyTotalCartItems(String itemsToAdd) {
         try {
             int numOfItems = 0;
             int cartSize = 0;
             try {
-                numOfItems = Integer.parseInt(ItemstoAdd);
-                genericLibrary.highLightElements(DriverFactory.getDriver(), AddedCartItemList);
+                numOfItems = Integer.parseInt(itemsToAdd);
                 cartSize = AddedCartItemList.size();
             } catch (NoSuchElementException e) {
                 Assert.assertFalse(false);
             }
             Assert.assertEquals(cartSize, numOfItems);
-            System.out.println(ItemstoAdd + " Items has been added to cart.");
-
-
-        } catch (Exception e) {
+            System.out.println(itemsToAdd + " Items has been added to cart.");
+        }
+        catch (Exception e) {
             System.out.println("Items are not same...");
             e.printStackTrace();
-
-
         }
     }
 
 
-    public void findLowestPriceItem() throws InterruptedException {
+    public void findLowestPriceItem() {
 
         try {
             int cartSize = AddedCartItemList.size();
@@ -75,7 +68,9 @@ public class CartPage {
                     genericLibrary.highLightElement(DriverFactory.getDriver(), productPrice.get(i));
                     genericLibrary.highLightElement(DriverFactory.getDriver(), productPrice.get(i));
                     amount = productPrice.get(i).getText().replace("$", " ").trim();
-                } catch (NoSuchElementException e) {
+                }
+                catch (NoSuchElementException e)
+                {
                     Assert.assertFalse(false);
                 }
                 String newAmt = amount.replaceAll("$", "");
@@ -111,8 +106,6 @@ public class CartPage {
                     genericLibrary.highLightElement(DriverFactory.getDriver(), productRemove.get(j));
                     productRemove.get(j).click();
                     Thread.sleep(3000);
-//                    genericLibrary.explicitWaitforanElement(DriverFactory.getDriver(),productName);
-
                     Assert.assertTrue(true, "Lowest price amount Item deleted...");
                     break;
                 }

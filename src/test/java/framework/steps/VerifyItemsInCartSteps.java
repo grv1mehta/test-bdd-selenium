@@ -13,11 +13,11 @@ public class VerifyItemsInCartSteps {
 
 
     @Given("I add {string} random Items to my cart")
-    public void i_add_random_items_to_my_cart(String items) throws InterruptedException {
+    public void i_add_random_items_to_my_cart(String items) {
         homePage.addItemsToCart(items);
     }
     @When("I view my cart {string}")
-    public void i_view_my_cart(String items) throws InterruptedException {
+    public void i_view_my_cart(String items) {
         homePage.clickViewCartBtn(items);
 
     }
