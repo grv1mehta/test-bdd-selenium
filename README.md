@@ -11,6 +11,10 @@ Steps to run at your system:
 Clone the repository using `git clone https://github.com/grv1mehta/test-bdd-selenium.git`
 
 Run `mvn clean test`
+Or
+Run the TestRunner under base/framework
+Or 
+Run the feature file/scenario directly
 
 Cucumber Reports:
 
