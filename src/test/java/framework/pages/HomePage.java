@@ -72,11 +72,8 @@ public class HomePage {
             try {
                 genericLibrary.highLightElement(DriverFactory.getDriver(), ViewCartBtn.get(newIndex - 1));
                 ViewCartBtn.get(newIndex - 1).click();
-//                long startTime = System.currentTimeMillis();
                 genericLibrary.explicitWaitforanElement(DriverFactory.getDriver(), ViewCartHeader);
                 genericLibrary.highLightElement(DriverFactory.getDriver(), ViewCartHeader);
-//                long endTime = System.currentTimeMillis();
-//                System.out.println("total Time::"+(endTime-startTime));
 
 
             } catch (NoSuchElementException e) {
