@@ -20,5 +20,6 @@ Cucumber Reports:
 ![img_1.png](img_1.png)
 
 Reports folder - "target\cucumber-reports\TestFramework_Report.html)
+PDF format reports can also be found in "target\cucumber-reports\"
 
 Please refer the recording for the scenario run at root folder by the name of: Screen Recording 2022-08-09 at 13.14.06.mov
